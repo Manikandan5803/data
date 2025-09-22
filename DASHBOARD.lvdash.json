@@ -1,0 +1,130 @@
+{
+  "datasets": [
+    {
+      "name": "4dc72385",
+      "displayName": "raw_table",
+      "queryLines": [
+        "SELECT * FROM demo.demo.raw_table"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "87d2db57",
+      "displayName": "Untitled page",
+      "layout": [
+        {
+          "widget": {
+            "name": "fffe35cb",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc72385",
+                  "fields": [
+                    {
+                      "name": "employee_id",
+                      "expression": "`employee_id`"
+                    },
+                    {
+                      "name": "salary",
+                      "expression": "`salary`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "employee_id",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "employee_id"
+                },
+                "y": {
+                  "fieldName": "salary",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "salary"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "724714f2",
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-single-select",
+              "encodings": {},
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 7,
+            "width": 2,
+            "height": 1
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS"
+    },
+    {
+      "name": "dd9460a1",
+      "displayName": "Global Filters",
+      "layout": [
+        {
+          "widget": {
+            "name": "a8a8bf2c",
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-single-select",
+              "encodings": {},
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS"
+    },
+    {
+      "name": "7c7f7089",
+      "displayName": "Untitled page 1",
+      "pageType": "PAGE_TYPE_CANVAS"
+    },
+    {
+      "name": "17775247",
+      "displayName": "Untitled page 2",
+      "pageType": "PAGE_TYPE_CANVAS"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    }
+  }
+}
